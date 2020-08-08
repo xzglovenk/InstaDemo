@@ -1,2 +1,12 @@
+<div>
+    <a href="{% url 'update_post' object.id %}">Update</a>
+    <a href="{% url 'delete_post' object.id %}">Delete</a>
+</div>
+
+
 <p> {{object.title}} </p>
 <img src="/{{object.image}}">
+
+<div>
+    <a href="{% url 'posts' %}"> Back to Home </a>
+</div>
